@@ -4,6 +4,3 @@
 #pragma once
 
 #define EE_HANDS
-
-#define TAPPING_TERM 175
-#define PERMISSIVE_HOLD
