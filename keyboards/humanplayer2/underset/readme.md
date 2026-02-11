@@ -47,4 +47,5 @@ Henceforth, the side arguments can be omitted, so either side can be flashed wit
 When in bootloader mode, an RP2040-Zero controller pops up as a mountable USB drive.
 - **New controller**: A previously unflashed controller enters bootloader mode when connecting it.
 - **Physical boot button**: Hold the RP2040-Zero `BOOT` button while connecting, then release.
+- **Physical reset button**: With the RP2040-Zero connected, press and hold `BOOT`, press and release `RESET`, then release `BOOT`.
 - **Keycode in layout**: Press the key mapped to `QK_BOOT`: With the `vial` keymap flashed, press first the left half top left key (`Esc`), then the left half top right key (`5`). The controller connected via USB will enter bootloader mode.
