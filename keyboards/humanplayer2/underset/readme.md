@@ -1,11 +1,11 @@
 # Underset
 
 <div align="center">
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/top.jpg" width="600"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_top.jpg" width="600"/>
 </div>
 <div align="center">
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/side.jpg" width="400"/>
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/cover.jpg" width="400"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_side.jpg" width="400"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_cover.jpg" width="400"/>
 </div>
 
 Underset is a spartan 52-key column-staggered split keyboard that features
@@ -49,4 +49,4 @@ When in bootloader mode, an RP2040-Zero controller pops up as a mountable USB dr
 - **New controller**: A previously unflashed controller enters bootloader mode when connecting it.
 - **Physical boot button**: Hold the RP2040-Zero `BOOT` button while connecting, then release.
 - **Physical reset button**: With the RP2040-Zero connected, press and hold `BOOT`, press and release `RESET`, then release `BOOT`.
-- **Keycode in layout**: Press the key mapped to `QK_BOOT`: With the `vial` keymap flashed, press first the left half top left key (`Esc`), then the left half top right key (`5`). The controller connected via USB will enter bootloader mode.
+- **Keycode in layout**: Press the key mapped to `QK_BOOT`: With the `vial` keymap flashed, on the right half, hold the center thumb and press the top right key.
