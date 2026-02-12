@@ -30,13 +30,14 @@ Waterbear uses `EE_HANDS` to set sides, which requires writing sides to the EEPR
 
 On each side, flash first with `-bl uf2-split-<left/right>` argument:
 
+_On left side:_
+
+    qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-left
+
 _On right side:_
 
     qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-right
 
-_On left side:_
-
-    qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-left
 
 ### Subsequent flashes
 Henceforth, the side arguments can be omitted, so either side can be flashed with 
