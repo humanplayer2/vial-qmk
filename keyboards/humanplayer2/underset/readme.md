@@ -26,9 +26,9 @@ Underset is a spartan 52-key column-staggered split keyboard that features
 ## Flash
 
 ### First flash: Set sides
-Waterbear uses `EE_HANDS` to set sides, which requires writing sides to the EEPROM chip once. 
+Underset by default uses `EE_HANDS` to set sides, which requires writing sides to the EEPROM chip once.
 
-On each side, flash first with `-bl uf2-split-<left/right>` argument:
+On each side, place the RP2040-Zero in bootloader mode (see below) and first with `-bl uf2-split-<left/right>` argument:
 
 _On left side:_
 
@@ -38,6 +38,7 @@ _On right side:_
 
     qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-right
 
+The controller will then exit the bootloader and re-mount as keyboard. You should now be able to remap the board e.g. using the [Vial web interface](vial.rocks).
 
 ### Subsequent flashes
 Henceforth, the side arguments can be omitted, so either side can be flashed with 
