@@ -14,9 +14,7 @@
         "bootmagic": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true,
-        "console": false,
-        "command": false
+        "nkro": true
     },
     "tapping": {
     "permissive_hold": true,
