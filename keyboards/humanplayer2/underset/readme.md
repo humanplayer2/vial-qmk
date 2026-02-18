@@ -1,11 +1,11 @@
 # Underset
 
 <div align="center">
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/top.jpg" width="600"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_top.jpg" width="600"/>
 </div>
 <div align="center">
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/side.jpg" width="400"/>
-    <img src="https://github.com/humanplayer2/underset/blob/main/images/cover.jpg" width="400"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_side.jpg" width="400"/>
+    <img src="https://github.com/humanplayer2/underset/blob/main/docs/images/done_cover.jpg" width="400"/>
 </div>
 
 Underset is a spartan 52-key column-staggered split keyboard that features
@@ -26,17 +26,19 @@ Underset is a spartan 52-key column-staggered split keyboard that features
 ## Flash
 
 ### First flash: Set sides
-Waterbear uses `EE_HANDS` to set sides, which requires writing sides to the EEPROM chip once. 
+Underset by default uses `EE_HANDS` to set sides, which requires writing sides to the EEPROM chip once.
 
-On each side, flash first with `-bl uf2-split-<left/right>` argument:
+On each side, place the RP2040-Zero in bootloader mode (see below) and first with `-bl uf2-split-<left/right>` argument:
+
+_On left side:_
+
+    qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-left
 
 _On right side:_
 
     qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-right
 
-_On left side:_
-
-    qmk flash -kb humanplayer2/underset -km vial -bl uf2-split-left
+The controller will then exit the bootloader and re-mount as keyboard. You should now be able to remap the board e.g. using the [Vial web interface](vial.rocks).
 
 ### Subsequent flashes
 Henceforth, the side arguments can be omitted, so either side can be flashed with 
@@ -48,4 +50,4 @@ When in bootloader mode, an RP2040-Zero controller pops up as a mountable USB dr
 - **New controller**: A previously unflashed controller enters bootloader mode when connecting it.
 - **Physical boot button**: Hold the RP2040-Zero `BOOT` button while connecting, then release.
 - **Physical reset button**: With the RP2040-Zero connected, press and hold `BOOT`, press and release `RESET`, then release `BOOT`.
-- **Keycode in layout**: Press the key mapped to `QK_BOOT`: With the `vial` keymap flashed, press first the left half top left key (`Esc`), then the left half top right key (`5`). The controller connected via USB will enter bootloader mode.
+- **Keycode in layout**: Press the key mapped to `QK_BOOT`: With the `vial` keymap flashed, on the right half, hold the center thumb and press the top right key.

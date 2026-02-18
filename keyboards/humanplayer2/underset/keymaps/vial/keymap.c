@@ -32,7 +32,7 @@ enum my_keycodes {
     VOL_MU  = KC_KB_MUTE,
     COPY    = C(KC_C),
     CUT     = C(KC_X),
-    PASTE   = S(KC_V),
+    PASTE   = C(KC_V),
     UNDO    = C(KC_Z)
 };
 
