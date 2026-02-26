@@ -26,7 +26,6 @@
     },
     "split": {
         "enabled": true,
-        "soft_serial_pin": "GP0",
         "transport": {"protocol": "serial"},
         "matrix_pins": {
             "right": {
