@@ -12,12 +12,8 @@ enum {
 
 
 enum my_keycodes {
-    // Mod and Layer Tabs
-    CTL_ESC = (MT(MOD_RCTL,KC_ESC)),   // Escape, control
-    CTL_ANX = (MT(MOD_RCTL,KC_F)),     // App next, control (for word selection while holding nav and shift)
-    SH_SPC  = (MT(MOD_RSFT,KC_SPACE)), // Space, shift
-    NAV_SPC = (LT(_NAV,KC_SPACE)),     // Space, navigation layer
     // OS Navigation
+    APP_ALL = A(C(KC_TAB)),
     APP_NXT = A(KC_TAB),               // Next application
     APP_PRV = A(S(KC_TAB)),            // Previous application
     WS_PRV  = C(LGUI(KC_RGHT)),        // Workspace previous
@@ -27,13 +23,17 @@ enum my_keycodes {
     BACK    = A(KC_LEFT),              // Back in browser
     ALT_F4  = A(KC_F4),                // Close application
     // Shorthands
-    VOL_UP  = KC_KB_VOLUME_UP,
-    VOL_DN  = KC_KB_VOLUME_DOWN,
-    VOL_MU  = KC_KB_MUTE,
+    VOL_UP  = KC_AUDIO_VOL_UP,
+    VOL_DN  = KC_AUDIO_VOL_DOWN,
+    VOL_MU  = KC_AUDIO_MUTE,
     COPY    = C(KC_C),
     CUT     = C(KC_X),
     PASTE   = C(KC_V),
-    UNDO    = C(KC_Z)
+    UNDO    = C(KC_Z),
+    // Mod and Layer Tabs
+    CTL_ESC = (MT(MOD_RCTL,KC_ESC)),   // Escape, control
+    SH_SPC  = (MT(MOD_RSFT,KC_SPACE)), // Space, shift
+    NAV_SPC = (LT(_NAV,KC_SPACE)),     // Space, navigation layer
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -48,9 +48,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     [_NAV] = LAYOUT(
         ALT_F4 , _______, _______, _______, _______, _______,         _______, _______, _______, _______, _______, QK_BOOT,
-        _______, _______, TAB_PRV, WS_NXT , TAB_NXT, _______,         KC_DEL , KC_HOME, KC_UP  , KC_END , _______, _______,
-        _______, _______, APP_PRV, WS_PRV , CTL_ANX, _______,         KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, 
-                 BACK   , VOL_DN , VOL_MU , VOL_UP , _______,         KC_APP , COPY   , PASTE  , CUT    , UNDO   ,
+        _______, _______, TAB_PRV, WS_NXT , TAB_NXT, APP_ALL,         KC_DEL , KC_HOME, KC_UP  , KC_END , _______, _______,
+        _______, _______, APP_PRV, WS_PRV , APP_NXT, KC_RCTL,         KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, 
+                 BACK   , VOL_DN , VOL_MU,  VOL_UP , _______,         KC_APP , COPY   , PASTE  , CUT    , UNDO   ,
                                    _______, _______, _______,         _______, _______, _______
     ),
     
