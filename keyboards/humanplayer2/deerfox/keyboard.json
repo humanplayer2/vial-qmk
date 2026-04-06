@@ -1,0 +1,88 @@
+{
+    "keyboard_name": "deerfox",
+    "manufacturer": "humanplayer2",
+    "maintainer": "humanplayer2",
+    "url": "https://github.com/humanplayer2/deerfox",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "usb": {
+        "vid": "0x1984",
+        "pid": "0x2602",
+        "device_version": "1.0.0"
+    },
+    "features": {
+        "bootmagic": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "tapping": {
+    "permissive_hold": true,
+    "term": 175
+    },
+     "matrix_pins": {
+        "cols": [ "GP27", "GP5", "GP6", "GP4", "GP29"],
+        "rows": [ "GP3", "GP28", "GP7", "GP8" ]
+    },
+    "split": {
+        "enabled": true,
+        "matrix_pins": {
+            "right": {
+                "cols": [ "GP5", "GP27", "GP26", "GP28", "GP3"],
+                "rows": [ "GP29", "GP4", "GP15", "GP14" ]
+            }
+        }
+    },
+    "diode_direction": "COL2ROW",
+    "layouts": {
+        "LAYOUT_1x1": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0, "label": "left top 0: GP27, GP3" },
+                {"matrix": [0, 1], "x": 0, "y": 1, "label": "left top 1" },
+                {"matrix": [0, 2], "x": 0, "y": 2, "label": "left top 2" },
+                {"matrix": [0, 3], "x": 0, "y": 3, "label": "left top 3" },
+                {"matrix": [0, 4], "x": 0, "y": 4, "label": "left top 4" },
+
+                {"matrix": [4, 4], "x": 0, "y": 4, "label": "right top 4" },
+                {"matrix": [4, 3], "x": 0, "y": 3, "label": "right top 3" },
+                {"matrix": [4, 2], "x": 0, "y": 2, "label": "right top 2" },
+                {"matrix": [4, 1], "x": 0, "y": 1, "label": "right top 1" },
+                {"matrix": [4, 0], "x": 0, "y": 0, "label": "right top 0" },
+
+                {"matrix": [3, 0], "x": 0, "y": 1, "label": "left home outer" },
+                {"matrix": [1, 0], "x": 0, "y": 9, "label": "left home little" },
+                {"matrix": [1, 1], "x": 0, "y": 8, "label": "left home ring" },
+                {"matrix": [1, 2], "x": 0, "y": 7, "label": "left home middle" },
+                {"matrix": [1, 3], "x": 0, "y": 6, "label": "left home index"},
+                {"matrix": [1, 4], "x": 0, "y": 5, "label": "left home inner"},
+
+                {"matrix": [5, 4], "x": 0, "y": 5, "label": "right home inner"},
+                {"matrix": [5, 3], "x": 0, "y": 6, "label": "right home index"},
+                {"matrix": [5, 2], "x": 0, "y": 7, "label": "right home middle" },
+                {"matrix": [5, 1], "x": 0, "y": 8, "label": "right home ring" },
+                {"matrix": [5, 0], "x": 0, "y": 9, "label": "right home little" },
+                {"matrix": [7, 0], "x": 0, "y": 4, "label": "right home outer"},
+
+                {"matrix": [2, 0], "x": 0, "y": 1, "label": "left low 0"},
+                {"matrix": [2, 1], "x": 0, "y": 1, "label": "left low 1"},
+                {"matrix": [2, 2], "x": 0, "y": 2, "label": "left low 2"},
+                {"matrix": [2, 3], "x": 0, "y": 3, "label": "left low 3"},
+                {"matrix": [2, 4], "x": 0, "y": 4, "label": "left low 4"},
+
+                {"matrix": [6, 4], "x": 0, "y": 4, "label": "right low 4"},
+                {"matrix": [6, 3], "x": 0, "y": 3, "label": "right low 3"},
+                {"matrix": [6, 2], "x": 0, "y": 2, "label": "right low 2"},
+                {"matrix": [6, 1], "x": 0, "y": 1, "label": "right low 1: H"},
+                {"matrix": [6, 0], "x": 0, "y": 1, "label": "right low 0"},
+                
+                {"matrix": [3, 2], "x": 0, "y": 2, "label": "left thumb 0"},
+                {"matrix": [3, 3], "x": 0, "y": 3, "label": "left thumb 1"},
+                {"matrix": [3, 4], "x": 0, "y": 4, "label": "left thumb 2"},
+
+                {"matrix": [7, 4], "x": 0, "y": 1, "label": "right thumb_in: GP3, "},
+                {"matrix": [7, 3], "x": 0, "y": 3, "label": "right thumb_mid: GP3, "},
+                {"matrix": [7, 2], "x": 0, "y": 2, "label": "right thumb_out: GP3, GP15"}
+            ]
+        }
+    }
+}
