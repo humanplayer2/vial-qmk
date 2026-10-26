@@ -1,7 +1,5 @@
 {
-  "name": "deerfox Vial", 
-  "vendorId": "0x1984",
-  "productId": "0x2603",
+  "name": "deerfox Vial",
   "lighting": "none",
   "matrix": { "rows": 8, "cols": 5 },
   "layouts": {

@@ -1,7 +1,5 @@
 {
-  "name": "deerfox Vial trackpoint", 
-  "vendorId": "0x1984",
-  "productId": "0x2605",
+  "name": "deerfox Vial trackpoint",
   "lighting": "none",
   "matrix": { "rows": 8, "cols": 5 },
   "layouts": {
