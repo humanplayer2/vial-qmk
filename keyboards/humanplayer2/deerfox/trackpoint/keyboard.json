@@ -1,8 +1,11 @@
 {
-    "keyboard_name": "deerfox trackpoint",
-    "usb": {
-        "pid": "0x2604"
-    },
+  "keyboard_name": "deerfox trackpoint",
+  "manufacturer": "humanplayer2",
+  "usb": {
+    "vid": "0x1984",
+    "pid": "0x2603",
+    "device_version": "1.0.0"
+  },
     "ps2": {
         "enabled": true,
         "driver": "vendor",

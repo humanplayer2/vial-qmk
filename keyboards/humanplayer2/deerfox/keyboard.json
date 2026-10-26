@@ -3,13 +3,13 @@
     "manufacturer": "humanplayer2",
     "maintainer": "humanplayer2",
     "url": "https://codeberg.org/humanplayer2/deerfox",
-    "processor": "RP2040",
-    "bootloader": "rp2040",
     "usb": {
         "vid": "0x1984",
-        "pid": "0x2603",
+        "pid": "0x2602",
         "device_version": "1.0.0"
     },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
     "features": {
         "bootmagic": false,
         "extrakey": true,
