@@ -2,6 +2,12 @@
   "name": "deerfox Vial trackpoint",
   "lighting": "none",
   "matrix": { "rows": 8, "cols": 5 },
+  "customKeycodes": [
+    {
+    "name": "BTN1_FN", 
+    "title": "Mouse button 1 \"layer-tap\". When held, activates _BTN1 layer on any other basic key press; sends _BTN1(key) and holds _BTN1 on until BTN1 is released.", 
+    "shortName": "BTN1_LT"}
+  ],
   "layouts": {
     "keymap": [
       [{"y":-0.75,"x":3},"0,2",{"x":7},"4,2"],

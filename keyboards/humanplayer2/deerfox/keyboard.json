@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "deerfox",
+    "keyboard_name": "deerfox trackpoint",
     "manufacturer": "humanplayer2",
     "maintainer": "humanplayer2",
     "url": "https://codeberg.org/humanplayer2/deerfox",
@@ -35,7 +35,7 @@
     },
     "diode_direction": "COL2ROW",
     "layouts": {
-        "LAYOUT_1x1": {
+        "LAYOUT": {
             "layout": [
                 {"matrix": [0, 0], "x": 1, "y": 1, "label": "left top 0" },
                 {"matrix": [0, 1], "x": 2, "y": 0.5, "label": "left top 1" },
