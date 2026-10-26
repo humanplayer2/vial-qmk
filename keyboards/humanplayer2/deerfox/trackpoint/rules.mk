@@ -2,3 +2,5 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 SRC += btn1_lt/btn1_lt.c
+
+UNICODE_ENABLE = yes
