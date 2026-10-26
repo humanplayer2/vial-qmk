@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "deerfox trackpoint",
+    "usb": {
+        "pid": "0x2604"
+    },
+    "ps2": {
+        "enabled": true,
+        "driver": "vendor",
+        "clock_pin": "GP2",
+        "data_pin": "GP1",
+        "mouse_enabled": true
+    }
+}

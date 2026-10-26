@@ -8,8 +8,6 @@ enum {
     _BASE  = 0,
 };
 
-#define DK_EGU UP(DK_E_AIGU_LOWER, DK_E_AIGU_UPPER)
-
 // Keycode names:
 enum my_keycodes {
   // Thumb keys

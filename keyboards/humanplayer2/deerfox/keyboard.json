@@ -2,7 +2,7 @@
     "keyboard_name": "deerfox",
     "manufacturer": "humanplayer2",
     "maintainer": "humanplayer2",
-    "url": "https://github.com/humanplayer2/deerfox",
+    "url": "https://codeberg.org/humanplayer2/deerfox",
     "processor": "RP2040",
     "bootloader": "rp2040",
     "usb": {
@@ -72,16 +72,16 @@
                 {"matrix": [6, 4], "x": 0, "y": 4, "label": "right low 4"},
                 {"matrix": [6, 3], "x": 0, "y": 3, "label": "right low 3"},
                 {"matrix": [6, 2], "x": 0, "y": 2, "label": "right low 2"},
-                {"matrix": [6, 1], "x": 0, "y": 1, "label": "right low 1: H"},
+                {"matrix": [6, 1], "x": 0, "y": 1, "label": "right low 1"},
                 {"matrix": [6, 0], "x": 0, "y": 1, "label": "right low 0"},
                 
-                {"matrix": [3, 2], "x": 0, "y": 2, "label": "left thumb 0"},
-                {"matrix": [3, 3], "x": 0, "y": 3, "label": "left thumb 1"},
-                {"matrix": [3, 4], "x": 0, "y": 4, "label": "left thumb 2"},
+                {"matrix": [3, 2], "x": 0, "y": 2, "label": "left thumb in"},
+                {"matrix": [3, 3], "x": 0, "y": 3, "label": "left thumb mid"},
+                {"matrix": [3, 4], "x": 0, "y": 4, "label": "left thumb out"},
 
-                {"matrix": [7, 4], "x": 0, "y": 1, "label": "right thumb_in: GP3, "},
-                {"matrix": [7, 3], "x": 0, "y": 3, "label": "right thumb_mid: GP3, "},
-                {"matrix": [7, 2], "x": 0, "y": 2, "label": "right thumb_out: GP3, GP15"}
+                {"matrix": [7, 4], "x": 0, "y": 1, "label": "right thumb in"},
+                {"matrix": [7, 3], "x": 0, "y": 3, "label": "right thumb mid"},
+                {"matrix": [7, 2], "x": 0, "y": 2, "label": "right thumb out: GP3, GP15"}
             ]
         }
     }

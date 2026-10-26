@@ -1,9 +1,9 @@
 {
-  "name": "deerfox", 
+  "name": "deerfox Vial", 
   "vendorId": "0x1984",
-  "productId": "0x0x2602",
+  "productId": "0x2603",
   "lighting": "none",
-  "matrix": { "rows": 10, "cols": 5 },
+  "matrix": { "rows": 8, "cols": 5 },
   "layouts": {
     "keymap": [
       [{"y":-0.75,"x":3},"0,2",{"x":7},"4,2"],
