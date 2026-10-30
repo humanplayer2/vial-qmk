@@ -6,6 +6,8 @@ Trackpoint variant of Deerfox, a 38-key column-staggered split keyboard that fea
 
 This variant adds a PS/2 trackpoint on the RP2040-Zero (clock on `GP2`, data on `GP1`) and places mouse buttons on the thumb keys of the base layer.
 
+To fix [QMK issue 24455](https://github.com/qmk/qmk_firmware/issues/24455), I've applied [QMK merged PR 25942](https://github.com/qmk/qmk_firmware/pull/25942/changes).
+
 - Keyboard maintainer: [humanplayer2](https://github.com/humanplayer2)
 - Hardware supported: [Deerfox PCB](https://codeberg.org/humanplayer2/deerfox) with [Trackpoint on RP2040-Zero](https://codeberg.org/humanplayer2/trackpoint_on_rp2040zero)
 - Hardware availability: Open source: [Deerfox](https://codeberg.org/humanplayer2/deerfox), [Trackpoint on RP2040-Zero](https://codeberg.org/humanplayer2/trackpoint_on_rp2040zero)
