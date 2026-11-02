@@ -53,22 +53,22 @@ enum my_keycodes {
     // Applications
     CLOSE_W = G(S(KC_W)),     // Close window
     LOCKSCR = G(C(KC_Q)),     // Lock screen
-    TERMINL = G(A(KC_ENTER)),    // Spawn terminal
+    TERMINL = G(A(KC_ENTER)), // Spawn terminal
     LAUNCHR = G(KC_SPACE),    // Show launcher
     SCNSHOT = S(G(KC_5)),     // Screenshot tool
     OVRVIEW = G(A(KC_O)),     // Applications overview
 
     // Tab navigation
-    TB_F_L = C(KC_PGUP),      // Focus tab left
-    TB_F_R = C(KC_PGDN),      // Focus tab right
+    TB_F_L  = C(KC_PGUP),     // Focus tab left
+    TB_F_R  = C(KC_PGDN),     // Focus tab right
     TB_LAST = G(KC_9),        // Last tab
     BACK    = G(KC_LEFT),     // Back in Firefox    
     
     // Window navigation
-    WS_F_U  = G(C(KC_K)),    // Focus workspace up
-    WS_F_D  = G(C(KC_J)),    // Focus workspace down
-    TL_F_L = G(C(KC_H)),     // Focus tile left
-    TL_F_R = G(C(KC_L)),     // Focus tile right
+    WS_F_U  = G(C(KC_K)),     // Focus workspace up
+    WS_F_D  = G(C(KC_J)),     // Focus workspace down
+    TL_F_L = G(C(KC_H)),      // Focus tile left
+    TL_F_R = G(C(KC_L)),      // Focus tile right
     
     TL_C = G(C(KC_C)),        // Center current tile
     TL_SMLR = G(C(KC_COMMA)), // Tile smaller
