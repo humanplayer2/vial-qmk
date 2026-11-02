@@ -15,10 +15,10 @@ Disable everything under `System Settings > Keyboard > Keyboard Shortcuts` excep
 - Let `Spotlight > Show Spotlight search` stay default at `cmd + space`
 - Let `Screenshots > Screenshot and recording options` stay default at `cmd + shift + 5`
 
-## Paneru: Window management
+## Paneru: Scrolling tiling window management
 Requires [Paneru](https://github.com/karinushka/paneru).
 
-The `_NAV` layer has window navigation on the left side. It is intended to be used with the below Paneru keybindings (or equivalent).
+The `_NAV` layer has window navigation on the left side. It is intended to be used with the below Paneru keybindings.
 
 ```
 # Window focus
