@@ -2,12 +2,6 @@
   "name": "deerfox Vial trackpoint",
   "lighting": "none",
   "matrix": { "rows": 8, "cols": 5 },
-  "customKeycodes": [
-    {
-    "name": "User\nLT 1\nMouse 1", 
-    "title": "Mouse button 1 \"layer-tap\". Activates layer 1 while held after a basic key is pressed, else Mouse 1.", 
-    "shortName": "User\nLT 1\nMouse1"}
-  ],
   "layouts": {
     "keymap": [
       [{"y":-0.75,"x":3},"0,2",{"x":7},"4,2"],

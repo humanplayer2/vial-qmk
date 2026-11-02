@@ -12,12 +12,13 @@ To fix [QMK issue 24455](https://github.com/qmk/qmk_firmware/issues/24455), I've
 - Hardware supported: [Deerfox PCB](https://codeberg.org/humanplayer2/deerfox) with [Trackpoint on RP2040-Zero](https://codeberg.org/humanplayer2/trackpoint_on_rp2040zero)
 - Hardware availability: Open source: [Deerfox](https://codeberg.org/humanplayer2/deerfox), [Trackpoint on RP2040-Zero](https://codeberg.org/humanplayer2/trackpoint_on_rp2040zero)
 
-> [!TIP]
-> To compile/flash without Vial support, replace `vial` with `default` in the commands below.
 
-## Compile with Vial support
+## Compile default Vial keymap
 
     qmk compile -kb humanplayer2/deerfox/trackpoint -km vial
+
+> [!TIP]
+> Replace `vial` with another keymap directory name, e.g. `paneru_dkqwerty`.
 
 ## Flash
 
