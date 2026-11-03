@@ -18,26 +18,26 @@ Disable everything under `System Settings > Keyboard > Keyboard Shortcuts` excep
 ## Paneru: Scrolling tiling window management
 Requires [Paneru](https://github.com/karinushka/paneru).
 
-The `_NAV` layer has window navigation on the left side. It is intended to be used with the below Paneru keybindings.
+The `_NAV` layer has window navigation on the left side. It is intended to be used with the below Paneru keybindings. The keypad is used as these are basic keycodes, so can be used as the keycode of `MT(MOD_LALT,kc)` on `_NAV` left index (good with thumb shift for word selection).
 
 ```
 # Window focus
-window_virtualfocus_north = "cmd + ctrl - k"
-window_virtualfocus_south = "cmd + ctrl - j"
-window_focus_west = "cmd + ctrl - h"
-window_focus_east = "cmd + ctrl - l"
-window_center = "cmd + ctrl - c"
+window_virtualfocus_north = "keypad8"
+window_virtualfocus_south = "keypad5"
+window_focus_west = "keypad4"
+window_focus_east = "keypad6"
+window_center = "keypad2"
 
 # Window state
-window_shrink = "cmd + ctrl - minus"
-window_grow = "cmd + ctrl - comma"
-window_manage = "cmd + ctrl - f"
+window_shrink = "keypad1"
+window_grow = "keypad3"
+window_manage = "keypad0"
 
 # Window movement
-window_virtualmove_north = "shift + cmd + ctrl - k" # clinches with firefox move tab
-window_virtualmove_south = "shift + cmd + ctrl - j"
-window_swap_west = "shift + cmd + ctrl - h"
-window_swap_east = "shift + cmd + ctrl - l"
+window_virtualmove_north = "shift - keypad8"
+window_virtualmove_south = "shift - keypad5"
+window_swap_west = "shift - keypad4"
+window_swap_east = "shift - keypad6"
 ```
 
 ## Hammerspoon: Quick access to a terminal

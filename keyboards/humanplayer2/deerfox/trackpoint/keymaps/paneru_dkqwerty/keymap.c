@@ -64,19 +64,18 @@ enum my_keycodes {
     TB_LAST = G(KC_9),        // Last tab
     BACK    = G(KC_LEFT),     // Back in Firefox    
     
-    // Window navigation
-    WS_F_U  = G(C(KC_K)),     // Focus workspace up
-    WS_F_D  = G(C(KC_J)),     // Focus workspace down
-    TL_F_L = G(C(KC_H)),      // Focus tile left
-    TL_F_R = G(C(KC_L)),      // Focus tile right
+// Window navigation using basic keycodes
+    WS_F_U  = KC_KP_8,        // Focus workspace up
+    WS_F_D  = KC_KP_5,        // Focus workspace down
+    TL_F_L  = KC_KP_4,        // Focus tile left
+    TL_F_R  = KC_KP_6,        // Focus tile right
     
-    TL_C = G(C(KC_C)),        // Center current tile
-    TL_SMLR = G(C(KC_COMMA)), // Tile smaller
-    TL_BIGR = G(C(KC_DOT)),   // Tile bigger
-    TL_TG = G(C(KC_F)),       // Toggle tiled or not
+    TL_C    = KC_KP_2,        // Center current tile
+    TL_SMLR = KC_KP_1,        // Tile smaller
+    TL_BIGR = KC_KP_3,        // Tile bigger
+    TL_TG   = KC_KP_0,        // Toggle tiled or not
     
     // Text 
-    WRD_JMP = KC_LALT,        // Word jumping that can be held with shift
     HOME    = G(KC_LEFT),
     END     = G(KC_RIGHT),
     COPY    = G(KC_C),
@@ -100,6 +99,7 @@ enum my_keycodes {
     ALT_Q   = MT(MOD_LALT, KC_Q),     // Option on base layer
 
     OPT_ESC = MT(MOD_LALT, KC_ESC),   // Option on _NAV layer for word jumping
+    TLFRWRD = MT(MOD_LALT, TL_F_R),   // Option on _NAV layer that can be held with shift for word selection
 };
 
 
@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT( 
              CLOSE_W, TB_F_L , WS_F_U , TB_F_R , TB_LAST,        KC_DEL , HOME   , KC_UP  , END    , LOCKSCR,
-    OVRVIEW, __xxx__, TL_F_L , WS_F_D , TL_F_R , WRD_JMP,        KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, __xxx__, SCNSHOT,
+    __xxx__, __xxx__, TL_F_L , WS_F_D , TLFRWRD, OVRVIEW,        KC_BSPC, KC_LEFT, KC_DOWN, KC_RGHT, __xxx__, SCNSHOT,
              BACK   , TL_SMLR, TL_C   , TL_BIGR, TL_TG  ,        __xxx__, COPY   , PASTE  , CUT    , UNDO   ,
                                OPT_ESC, _______, LAUNCHR,        _______, _______, TERMINL
     ),
